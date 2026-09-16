@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raffel — still figuring it out</title>
+  <meta name="description" content="Raffel Reinhard — young creative from SMK Telkom Purwokerto. Cars, mountains, music, code and design. Still learning. Still creating. Still figuring things out." />
+
+  <!-- Fonts: Space Grotesk (headings) / Poppins (body) / IBM Plex Mono (labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Warm film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+  <!-- Subtle custom cursor (desktop only, disabled on touch) -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ============================================================ -->
+  <!-- NAVIGATION                                                  -->
+  <!-- ============================================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#hero">RAFFEL<span class="nav__brand-dot">.</span></a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">ABOUT</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <p class="nav__status"><span class="nav__status-dot"></span>currently figuring things out</p>
+
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ========================================================== -->
+    <!-- HERO                                                       -->
+    <!-- ========================================================== -->
+    <section class="hero" id="hero">
+      <figure class="hero__media" data-parallax>
+        <img class="hero__img" src="assets/images/hero/hero.jpg" alt="Raffel next to a Mercedes-Benz W124, cinematic and warm" />
+      </figure>
+
+      <!-- Frame caption — pinned top-right under the nav.
+           Deliberately OUTSIDE .hero__media so it never follows the parallax. -->
+      <p class="hero__caption"><span class="mono"><b>FRAME 01</b> — somewhere between an old car and the next idea</span></p>
+
+      <div class="hero__content">
+        <p class="hero__kicker mono reveal">KIK — Personal Branding / 2026</p>
+        <h1 class="hero__title">RAFFEL<span class="hero__title-mark">.</span></h1>
+        <p class="hero__sub mono">still figuring it out</p>
+
+        <div class="hero__meta">
+          <p class="hero__school">SMK Telkom Purwokerto<br /><span class="hero__major">PPLG / Creative &amp; Technology</span></p>
+          <p class="hero__statement">Cars. Mountains. Music. Design.<br />Just a few things that make me, me.</p>
+        </div>
+
+        <a class="btn hero__cta" href="#about"><span>explore my work</span> →</a>
+
+        <p class="hero__scroll mono">scroll<svg class="hero__scroll-line" viewBox="0 0 1 40" preserveAspectRatio="none"><line x1="0" y1="0" x2="0" y2="40" /></svg></p>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- ABOUT                                                      -->
+    <!-- ========================================================== -->
+    <section class="about section" id="about">
+      <p class="section-label mono reveal">01 — ABOUT ME</p>
+      <h2 class="about__head">I DON'T REALLY<br />HAVE ONE THING.</h2>
+
+      <div class="about__grid">
+        <figure class="about__figure reveal">
+          <img src="assets/images/about/about.jpg" alt="Portrait of Raffel" />
+          <figcaption class="mono">RAFFEL / FULL FRAME</figcaption>
+        </figure>
+
+        <div class="about__text">
+          <p class="reveal">I'm Raffel, a student at SMK Telkom Purwokerto.</p>
+          <p class="reveal">I like building things, designing things, and sometimes just getting lost somewhere with a camera.</p>
+          <p class="reveal">Cars, two-strokes, mountains, skateboarding, music and design are some of the things that keep me curious.</p>
+          <p class="reveal about__signoff">I'm still figuring out what I want to become.<br />And honestly, I'm okay with that.</p>
+        </div>
+      </div>
+
+      <!-- small image strip -->
+      <div class="about__strip">
+        <a class="about__strip-item" href="#garage"><img src="assets/images/automotive/automotive.jpg" alt="Automotive — classic car" /><span class="mono">AUTOMOTIVE</span></a>
+        <a class="about__strip-item" href="#mountain"><img src="assets/images/mountain/mountain.jpg" alt="Mountain trail" /><span class="mono">MOUNTAIN</span></a>
+        <a class="about__strip-item" href="#skate"><img src="assets/images/skate/skate.jpg" alt="Skateboarding" /><span class="mono">SKATE</span></a>
+        <a class="about__strip-item" href="#music"><img src="assets/images/music/music.jpg" alt="Music" /><span class="mono">MUSIC</span></a>
+        <a class="about__strip-item" href="#design"><img src="assets/images/design/design.png" alt="Visual design" /><span class="mono">DESIGN</span></a>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- EDUCATION                                                  -->
+    <!-- ========================================================== -->
+    <section class="edu section" id="education">
+      <p class="section-label reveal">02 — EDUCATION</p>
+      <h2 class="section-title">WHERE I'M<br /><em>LEARNING.</em></h2>
+
+      <div class="edu__row">
+        <div class="edu__school reveal">
+          <h3 class="edu__name">SMK Telkom Purwokerto</h3>
+          <p class="edu__prog">PPLG — Pengembangan Perangkat Lunak dan Gim</p>
+          <p class="edu__line mono">STATUS — STUDENT<br />YEAR — 2025 — PRESENT</p>
+        </div>
+        <p class="edu__note reveal">Learning technology<br />while figuring out what<br />I can create with it.</p>
+      </div>
+
+      <div class="edu__ticker mono" aria-hidden="true">
+        <div class="edu__ticker-track">
+          <span>LEARNING</span><span>·</span><span>BUILDING</span><span>·</span><span>UNDERSTANDING</span><span>·</span><span>MAKING MISTAKES</span><span>·</span><span>TRYING AGAIN</span><span>·</span><span>LEARNING</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- SKILLS                                                     -->
+    <!-- ========================================================== -->
+    <section class="skills section" id="skills">
+      <p class="section-label reveal">03 — SKILLS</p>
+      <h2 class="section-title">THINGS I CAN<br /><em>DO.</em></h2>
+
+      <div class="skills__group reveal">
+        <p class="skills__group-title mono">DEVELOPMENT <span class="skills__num">/01</span></p>
+        <ul class="skills__tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Web Development</li><li>Game Development</li>
+        </ul>
+      </div>
+
+      <div class="skills__group reveal">
+        <p class="skills__group-title mono">DESIGN <span class="skills__num">/02</span></p>
+        <ul class="skills__tags">
+          <li>UI / UX</li><li>Visual Design</li><li>Prototyping</li><li>Layout</li><li>Branding</li>
+        </ul>
+      </div>
+
+      <div class="skills__group reveal">
+        <p class="skills__group-title mono">CREATIVE <span class="skills__num">/03</span></p>
+        <ul class="skills__tags">
+          <li>Photography</li><li>Video</li><li>Creative Direction</li><li>Content</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- PROJECTS                                                   -->
+    <!-- ========================================================== -->
+    <section class="projects section" id="projects">
+      <p class="section-label reveal">04 — PROJECTS</p>
+      <h2 class="section-title">THINGS I'VE<br /><em>BUILT.</em></h2>
+
+      <!-- Project 01 -->
+      <article class="project reveal">
+        <div class="project__head">
+          <p class="mono project__num">PROJECT 01 / GAMES</p>
+          <h3 class="project__title">SPACE jump</h3>
+        </div>
+        <figure class="project__media" data-tilt-media>
+          <a class="project__media-link" href="https://gd.games/wasyunem/huge-passenger--multiplayer-platformer" target="_blank" rel="noopener" aria-label="Play Space Jump on gd.games">
+            <img src="assets/images/projects/space-jump.jpg" alt="Space Jump game project" />
+          </a>
+          <figcaption class="project__cat mono">GAME / DEVELOPMENT</figcaption>
+        </figure>
+        <div class="project__body">
+          <p class="project__desc">A game project built as part of my journey in learning game development.</p>
+          <a class="btn btn--ghost" href="https://gd.games/wasyunem/huge-passenger--multiplayer-platformer" target="_blank" rel="noopener">VIEW PROJECT →</a>
+        </div>
+        <!-- editable meta -->
+        <ul class="project__meta mono">
+          <li>SPARE / <span class="ph">TECH — TBD</span></li>
+          <li>ROLE — <span class="ph">TBD</span></li>
+        </ul>
+      </article>
+
+      <!-- Project 02 -->
+      <article class="project reveal">
+        <div class="project__head">
+          <p class="mono project__num">PROJECT 02 / WEB</p>
+          <h3 class="project__title">ASETKITA</h3>
+        </div>
+        <figure class="project__media" data-tilt-media>
+          <a class="project__media-link" href="https://github.com/KiandrAHD/AsetKita" target="_blank" rel="noopener" aria-label="View AsetKita on GitHub">
+            <img src="assets/images/projects/asetkita.jpg" alt="AsetKita web project preview" />
+          </a>
+          <figcaption class="project__cat mono">WEB / UI/UX / COMPETITION</figcaption>
+        </figure>
+        <div class="project__body">
+          <p class="project__desc">A web project created for a Bank Indonesia competition, focused on financial education and digital investment.</p>
+          <a class="btn btn--link" href="https://github.com/KiandrAHD/AsetKita" target="_blank" rel="noopener">VIEW PROJECT →</a>
+        </div>
+        <ul class="project__meta mono">
+          <li>COMPETITION — <span class="ph">BI COMPETITION 2026 (EDIT)</span></li>
+          <li>ROLE — <span class="ph">TBD</span></li>
+          <li class="ph">RESULT — TBD</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- SERVICES                                                   -->
+    <!-- ========================================================== -->
+    <section class="services section" id="services">
+      <p class="section-label reveal">05 — SERVICES</p>
+      <h2 class="section-title">WHAT I CAN<br /><em>CREATE.</em></h2>
+
+      <div class="services__cols">
+        <div class="service reveal">
+          <p class="mono service__num">01</p>
+          <h3 class="service__title">WEB DEVELOPMENT</h3>
+          <p class="service__desc">Building clean and responsive websites.</p>
+        </div>
+        <div class="service reveal">
+          <p class="mono service__num">02</p>
+          <h3 class="service__title">UI / UX DESIGN</h3>
+          <p class="service__desc">Turning ideas into simple and usable interfaces.</p>
+        </div>
+        <div class="service reveal">
+          <p class="mono service__num">03</p>
+          <h3 class="service__title">GAME DEVELOPMENT</h3>
+          <p class="service__desc">Creating small interactive game experiences.</p>
+        </div>
+        <div class="service reveal">
+          <p class="mono service__num">04</p>
+          <h3 class="service__title">VISUAL DESIGN</h3>
+          <p class="service__desc">Posters, digital visuals and creative assets.</p>
+        </div>
+      </div>
+
+      <p class="services__note mono reveal">Still learning, but always willing to build something new.</p>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- OUTSIDE THE SCREEN                                          -->
+    <!-- ========================================================== -->
+    <section class="outside section" id="outside">
+      <p class="section-label reveal">06 — OUTSIDE THE SCREEN</p>
+      <h2 class="section-title">THE THINGS THAT<br /><em>KEEP ME MOVING.</em></h2>
+
+      <div class="outside__grid">
+        <a class="outside__item reveal" href="#garage" data-tilt-media>
+          <figure class="outside__media"><img src="assets/images/automotive/cars-two-strokes.jpg" alt="Cars & two-strokes" /><span class="outside__tag mono">AUTOMOTIVE</span></figure>
+          <h3>CARS &amp; TWO-STROKES</h3>
+          <p class="outside__note">W124 / 2-STROKE<br />Some things are better felt than explained.</p>
+        </a>
+
+        <a class="outside__item reveal" id="skate" href="#skate" data-tilt-media>
+          <figure class="outside__media"><img src="assets/images/skate/skate.jpg" alt="Skateboard" /><span class="outside__tag mono">SKATE</span></figure>
+          <h3>STILL LEARNING</h3>
+          <p class="outside__note">SKATE<br />Still falling. Still trying.</p>
+        </a>
+
+        <a class="outside__item reveal" id="mountain" href="#mountain" data-tilt-media>
+          <figure class="outside__media"><img src="assets/images/mountain/mountain.jpg" alt="Mountains and trails" /><span class="outside__tag mono">MOUNTAINS</span></figure>
+          <h3>MOUNTAINS &amp; TRAILS</h3>
+          <p class="outside__note">Slow is still moving.</p>
+        </a>
+
+        <a class="outside__item reveal" href="#music" data-tilt-media>
+          <figure class="outside__media"><img src="assets/images/music/music.jpg" alt="Music records" /><span class="outside__tag mono">MUSIC</span></figure>
+          <h3>MUSIC &amp; R&amp;B</h3>
+          <p class="outside__note">FRANK / OASIS / HIP-HOP / R&amp;B<br />Some songs say what I can't.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- MUSIC — dark archive                                        -->
+    <!-- ========================================================== -->
+    <section class="music section section--dark" id="music">
+      <p class="section-label reveal">— MY MUSIC —</p>
+      <h2 class="section-title section-title--light">SONGS THAT<br /><em>SAY IT.</em></h2>
+
+      <p class="music__hint mono">HOVER TO EXPLORE <span class="music__hint-hands">(on a record deck)</span></p>
+
+      <div class="records" id="records">
+        <!-- Each .record triggers the vinyl interaction -->
+        <article class="record" data-record>
+          <div class="record__stack">
+            <div class="record__vinyl" aria-hidden="true"></div>
+            <figure class="record__cover">
+              <img src="assets/images/music/music.jpg" alt="Featured album cover" />
+            </figure>
+          </div>
+          <h3 class="record__artist">FEATURED PICK</h3>
+          <p class="record__album mono">RAFFEL'S PLAYLIST</p>
+          <p class="record__note">Songs that hit different. Mixed by mood, not genre.</p>
+        </article>
+
+        <article class="record" data-record>
+          <div class="record__stack">
+            <div class="record__vinyl" aria-hidden="true"></div>
+            <figure class="record__cover">
+              <img src="assets/images/music/daniel-caesar.jpg" alt="Daniel Caesar — Freudian" />
+            </figure>
+          </div>
+          <h3 class="record__artist">DANIEL CAESAR</h3>
+          <p class="record__album mono">FREUDIAN</p>
+          <p class="record__note">Soft, warm, feels like a late night.</p>
+        </article>
+
+        <article class="record" data-record>
+          <div class="record__stack">
+            <div class="record__vinyl" aria-hidden="true"></div>
+            <figure class="record__cover">
+              <img src="assets/images/music/mac-miller.jpg" alt="Mac Miller — Swimming" />
+            </figure>
+          </div>
+          <h3 class="record__artist">MAC MILLER</h3>
+          <p class="record__album mono">SWIMMING</p>
+          <p class="record__note">Him moving through life and just letting music happen.</p>
+        </article>
+
+        <article class="record" data-record>
+          <div class="record__stack">
+            <div class="record__vinyl" aria-hidden="true"></div>
+            <figure class="record__cover">
+              <img src="assets/images/music/tyler.jpg" alt="Tyler, The Creator — Igor" />
+            </figure>
+          </div>
+          <h3 class="record__artist">TYLER, THE CREATOR</h3>
+          <p class="record__album mono">IGOR</p>
+          <p class="record__note">Arrangement, costume, character — all of it.</p>
+        </article>
+
+        <article class="record" data-record>
+          <div class="record__stack">
+            <div class="record__vinyl" aria-hidden="true"></div>
+            <figure class="record__cover">
+              <img src="assets/images/music/brent-faiyaz.jpg" alt="Brent Faiyaz — Wasteland" />
+            </figure>
+          </div>
+          <h3 class="record__artist">BRENT FAIYAZ</h3>
+          <p class="record__album mono">WASTELAND</p>
+          <p class="record__note">Smooth and honest, easy to replay.</p>
+        </article>
+
+        <article class="record" data-record>
+          <div class="record__stack">
+            <div class="record__vinyl" aria-hidden="true"></div>
+            <figure class="record__cover">
+              <img src="assets/images/music/oasis.jpg" alt="Oasis — (What's the Story) Morning Glory" />
+            </figure>
+          </div>
+          <h3 class="record__artist">OASIS</h3>
+          <p class="record__album mono">(WHAT'S THE STORY)</p>
+          <p class="record__note">Big choruses, loud guitars, no apologies.</p>
+        </article>
+      </div>
+
+      <p class="music__bridge reveal">SOME THINGS ARE BETTER FELT THAN EXPLAINED.</p>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- AUTOMOTIVE — MY GARAGE                                      -->
+    <!-- ========================================================== -->
+    <section class="garage section section--dark" id="garage">
+      <p class="section-label reveal">07 — MY GARAGE</p>
+      <h2 class="section-title section-title--light">THINGS WITH ENGINES<br /><em>&amp; CHARACTER.</em></h2>
+
+      <div class="garage__hint mono">MOVE YOUR CURSOR <span class="garage__hint-hands">( or scroll on mobile )</span></div>
+
+      <!-- W124 -->
+      <article class="car" data-car>
+        <div class="car__media" data-tilt-car>
+          <img src="assets/images/automotive/w124.jpg" alt="Mercedes-Benz W124" />
+          <div class="car__frame" aria-hidden="true"></div>
+          <p class="car__spec mono">
+            <span>300E</span><span>6 CYLINDER</span><span>3.0L</span><span>OLD SOUL.</span>
+          </p>
+        </div>
+        <div class="car__body">
+          <h3 class="car__title">MERCEDES-BENZ<br />W124</h3>
+          <p class="car__desc">More than a car. Something about old machines just feels different.</p>
+          <p class="car__extra mono">RAZOR OVER THE ROAD —<br />NO MODERNS, JUST ME.</p>
+        </div>
+        <div class="car__details mono">
+          <span>01 HEADLIGHTS</span>
+          <span>02 EMBLEM</span>
+          <span>03 WHEEL</span>
+          <span>04 DASHBOARD</span>
+          <span>05 SPEEDOMETER</span>
+          <span>06 INTERIOR</span>
+        </div>
+      </article>
+
+      <!-- RX-Z -->
+      <article class="car reveal" data-car>
+        <div class="car__media">
+          <img src="assets/images/automotive/rxz.jpg" alt="Yamaha RX-Z motorcycle" />
+          <div class="car__frame" aria-hidden="true"></div>
+          <p class="car__spec mono">
+            <span>2-STROKE</span><span>RAW SOUND</span><span>RAW FEELING</span>
+          </p>
+        </div>
+        <div class="car__body">
+          <h3 class="car__title">YAMAHA<br />RX-Z</h3>
+          <p class="car__desc">Not perfect.<br />Not supposed to be.</p>
+          <p class="car__extra mono">SMOKE IS A SIGN OF CHARACTER.</p>
+        </div>
+        <div class="car__details">
+          <span>01 ENGINE</span>
+          <span>02 EXHAUST</span>
+          <span>03 SPEEDOMETER</span>
+          <span>04 WHEEL</span>
+          <span>05 TANK</span>
+          <span>06 RIDE</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- CONTACT                                                     -->
+    <!-- ========================================================== -->
+    <section class="contact section" id="contact">
+      <p class="section-label reveal">08 — CONTACT</p>
+      <h2 class="contact__title reveal">LET'S MAKE<br /><em>SOMETHING.</em></h2>
+      <p class="contact__lead reveal">Got an idea? Let's talk.</p>
+
+      <div class="contact__links">
+        <a class="contact__link reveal" href="https://www.instagram.com/raffaelreyndraaa?stkn=ZnZjbDUzY2V5bTVr&utm_source=qr" target="_blank" rel="noopener" data-social="instagram">
+          <span class="contact__icon" aria-hidden="true"></span>
+          <span class="contact__label mono">INSTAGRAM</span>
+          <span class="contact__handle mono">@raffaelreyndraaa</span>
+        </a>
+        <a class="contact__link reveal" href="#" data-social="linkedin">
+          <span class="contact__icon" aria-hidden="true"></span>
+          <span class="contact__label mono">LINKEDIN</span>
+          <span class="contact__handle ph">YOUR_LINKEDIN</span>
+        </a>
+        <a class="contact__link reveal" href="https://wa.me/6285866387720" target="_blank" rel="noopener" data-social="whatsapp">
+          <span class="contact__icon" aria-hidden="true"></span>
+          <span class="contact__label mono">WHATSAPP</span>
+          <span class="contact__handle mono">+62 858-6638-7720</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER                                                        -->
+  <!-- ============================================================ -->
+  <footer class="footer">
+    <p class="footer__statement reveal">I'M NOT<br />FINISHED YET.</p>
+    <p class="footer__sub mono">And that's probably the best part.</p>
+
+    <div class="footer__bottom">
+      <p class="mono">RAFFAEL REYNDRA SETIAWAN</p>
+      <p class="mono">SMK TELKOM PURWOKERTO — 2026</p>
+      <p class="mono">This is just the beginning.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
